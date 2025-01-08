@@ -6,110 +6,111 @@
 
 body {
   font-family: "inter";
-}
-
-.logo-icon {
-  width: 35px;
-  height: 24px;
-}
-
-nav {
-  display: flex;
-  background-color: #f5f7fa;
-  height: 84px;
-  justify-content: space-between;
-  padding: 20px 100px;
+  min-height: 100vh;
 }
 
 .logo {
   display: flex;
+  width: 20%;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
-.black{
- color: #263238;
+.logo img {
+  height: 25px;
 }
 
-.white{
-  color: #FFFFFF;
-}
-
-.menu-links-login {
+nav {
   display: flex;
-  gap: 18rem;
-}
-
-.menu-links {
-  display: flex;
-  gap: 5rem;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 16px;
+  background-color: #f5f7fa;
+}
+
+.desktop-nav {
+  width: 60%;
+  list-style-type: none;
+  display: flex;
   justify-content: center;
 }
 
-.menu-links > a {
+.desktop-nav li {
+  margin: 0 1rem;
+}
+
+.desktop-nav li a {
   text-decoration: none;
-  color: #263238;
+  color: #333;
 }
 
 .login-info {
-  display: flex;
-  gap: 2rem;
+  width: 20%;
 }
 
-.login-button{
-  font-weight:700;
-  background-color:  #f5f7fa;
+.login-info button {
+  padding: 8px 16px;
+  outline: none;
   border: none;
-  border-radius: 0.3rem;
-  padding: 1rem 1rem;
-  font-size: 0.8rem; 
+  cursor: pointer;
+  border-radius: 8px;
+  margin-right: 8px;
+  background-color: green;
 }
 
-.login-button a{
+.login-info a {
   text-decoration: none;
-  color: #4CAF4F;
 }
 
-.sign-button{
-  font-weight:700;
-  background-color: #4CAF4F;
-  border: none;
-  border-radius: 0.3rem;
-  padding: 1rem 1rem;
-  font-size: 0.8rem;
+.login-info .login-button {
+  background-color: #f5f7fa;
 }
 
-.sign-button a{
-  text-decoration: none;
+.login-button a {
+  color: #4caf4f;
+}
+
+.login-info .sign-button {
+  background-color: #4caf4f;
+}
+
+.sign-button a {
   color: white;
 }
 
-.section-1 {
-  height: 500px;
-  background-color:#f5f7fa; 
-  display: flex;
-  justify-content:space-around; 
+.mobile-nav-links {
+  display: none;
 }
 
-.lesson-insight{
+.section-1 {
+  height: 600px;
+  width: 100%;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lesson-insight {
   padding: 50px;
 }
 
-.Illustration-icon{
+.Illustration-icon {
   margin-top: 50px;
 }
 
-.lesson{
+.lesson {
   font-size: 5rem;
 }
 
-.years{
+.years {
   font-size: 4rem;
-  color: #4CAF4F;
+  color: #4caf4f;
 }
 
-.clients{
+.clients {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -117,37 +118,37 @@ nav {
   margin-top: 35px;
 }
 
-.h2-item-1{
+.h2-item-1 {
   font-weight: 600;
   font-size: 36px;
   line-height: 44px;
 }
 
-.h2-item-2{
+.h2-item-2 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.h3-item-1{
+.h3-item-1 {
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
 }
 
-.h3-item-2{
+.h3-item-2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
 
-.logo-container{
+.logo-container {
   display: flex;
   justify-content: space-around;
-  padding:50px 100px 0 100px;
+  margin-top: 20px;
 }
 
-.header-container{
+.header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,134 +157,132 @@ nav {
   margin-top: 50px;
 }
 
-.flexbox{
+.flexbox {
   display: flex;
   justify-content: space-around;
 }
 
-.lorem{
-  text-align:left;
-  margin-top: 20px;
-  padding: 0 250px 0 0;
+.lorem {
+  text-align: left;
   line-height: 25px;
 }
 
-.section-4{
+.section-4 {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 5rem;
-  padding:100px 100px 100px 200px;
+  padding: 100px 100px 100px 200px;
 }
 
-.section-5{
+.section-5 {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
-  background-color:#f5f7fa; 
+  background-color: #f5f7fa;
   height: 300px;
 }
 
-.payment-items{
+.payment-items {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-
-.color{
-  color: #4CAF4F;
+.color {
+  color: #4caf4f;
   line-height: 44px;
   font-size: 36px;
   font-weight: 600;
 }
 
-.members-club{
+.members-club {
   display: flex;
   gap: 4rem;
   justify-content: center;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.section-6{
+.section-6 {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  padding:50px 100px 100px 250px;
- 
+  padding: 100px;
 }
 
-.section-7{
+.section-7 {
   display: flex;
-  justify-content:center;
+  justify-content: space-around;
   align-items: center;
-  background-color:#f5f7fa; 
+  background-color: #f5f7fa;
   height: 380px;
   gap: 3rem;
-  padding:115px 100px 100px 300px;
+  padding: 100px;
 }
 
-.tim-smith{
-  color: #4CAF4F;
-  margin-top:10px;
+.tim-smith {
+  color: #4caf4f;
+  margin-top: 10px;
 }
 
-.logo-container-2{
+.logo-container-2 {
   display: flex;
-  gap:2rem;
+  gap: 2rem;
   margin-top: 15px;
 }
 
-.meet{
+.meet {
   display: flex;
- 
   align-items: center;
   gap: 10px;
-  width: 50%;
 }
 
- h4{
-color: #4CAF4F;
-font-size: 20px;
+.meet-mobile {
+  display: none;
 }
 
-.caring{
-margin-top: 50px;
-text-align: center;
+h4 {
+  color: #4caf4f;
+  font-size: 20px;
 }
 
-.creating{
+.caring {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.creating {
   background-color: #eef4fc;
   text-align: center;
   position: relative;
   top: -100px;
   left: 20px;
   width: 90%;
-  padding: 20px ;
+  padding: 20px;
   border-radius: 15px;
   box-shadow: 0 6px 2px 0 rgb(194, 194, 228);
 }
 
-.flex-container{
+.flex-container {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   padding-top: 15px;
 }
 
-.grey{
+.grey {
   color: #717171;
   font-size: 20px;
   line-height: 28px;
 }
 
-.readmore-container{
+.readmore-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -291,8 +290,8 @@ text-align: center;
   gap: 8px;
 }
 
-.section-9{
-  background-color: #F5F7FA;
+.section-9 {
+  background-color: #f5f7fa;
   margin-top: 40px;
   text-align: center;
   height: 300px;
@@ -300,58 +299,78 @@ text-align: center;
   padding: 32px;
 }
 
-.lorem-h1{
+.lorem-h1 {
   font-weight: 600;
   font-size: 64px;
   line-height: 76px;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
-.footer-section-1{
+.footer-section-1 {
   background-color: #263238;
-  height: 328px;
+  height: 350px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap:18rem;
-  padding: 64px 165px 64px 165px;
+  gap: 18rem;
+  padding: 40px;
 }
 
-.copyright{
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+
+.copyright {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #F5F7FA;
+  color: #f5f7fa;
 }
 
-.flex-1{
+.flex-1 {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.footer-section-2{
+.footer-section-2 {
   display: flex;
   gap: 8rem;
 }
 
-.footer-h4{
+.Company-support {
+  display: flex;
+  gap: 5rem;
+}
+
+.footer-h4 {
   font-weight: 600;
   font-size: 20px;
   line-height: 40px;
-  color: #F5F7FA;
-  margin-bottom:26px;
+  color: #f5f7fa;
+  margin-bottom: 26px;
 }
 
-.footer-h3{
+.footer-h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  color: #F5F7FA;
+  color: #f5f7fa;
 }
 
-.button{
-  font-weight:700;
-  background-color: #4CAF4F;
+.input-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.button {
+  font-weight: 700;
+  background-color: #4caf4f;
   border: none;
   border-radius: 0.3rem;
   padding: 1rem 2rem;
@@ -361,5 +380,24 @@ text-align: center;
 
 .button a {
   text-decoration: none;
-  color:white;
+  color: white;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #b4b9c9;
+  padding: 12px;
+  width: 255px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.svg {
+  position: relative;
+  right: 30px;
+  top: 3px;
 }

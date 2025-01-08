@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my landing page</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,36 +14,67 @@
     />
   </head>
   <body>
+    <!-- Navigation Starts Here -->
     <nav>
       <div class="logo">
         <img src="./assets/Icon.png" alt="" class="logo-icon" />
         <h1 class="black">Nexcent</h1>
       </div>
-      <div class="menu-links-login">
-        <div class="menu-links">
-          <a href="#home">Home</a>
-          <a href="#service">Service</a>
-          <a href="#feature">Feature</a>
-          <a href="#product">Product</a>
-          <a href="#testimonial">Testimonial</a>
-          <a href="#FAQ">FAQ</a>
-        </div>
-        <div class="login-info">
-          <button class="login-button">
-            <a href="#login" class="login-link">Login</a>
-          </button>
-          <button class="sign-button">
-            <a href="#sign up">Sign up</a>
-          </button>
+
+      <ul class="desktop-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Feature</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+
+      <div class="login-info">
+        <button class="login-button">
+          <a href="#login">Login</a>
+        </button>
+        <button class="sign-button">
+          <a href="#sign up">Sign up</a>
+        </button>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="hamburger">
+          <div class="line one"></div>
+          <div class="line two"></div>
+          <div class="line three"></div>
         </div>
       </div>
     </nav>
+
+    <ul class="mobile-nav-links mobile-hidden">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Feature</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Testimonial</a></li>
+      <li><a href="#">FAQ</a></li>
+
+      <div class="login-info">
+        <button class="login-button">
+          <a href="#login">Login</a>
+        </button>
+        <button class="sign-button">
+          <a href="#sign up">Sign up</a>
+        </button>
+      </div>
+    </ul>
+
+    <!-- Section 1 Starts -->
     <section class="section-1">
       <div class="lesson-insight">
-        <h1 class="lesson">Lessons and insight</h1>
-        <h2 class="years">from 8 years</h2>
+        <div class="lesson-container">
+          <h1 class="lesson">Lessons and insight</h1>
+          <h2 class="years">from 8 years</h2>
+        </div>
         <p>
-          Where to grow your bussiness as a photographer:site or social media
+          Where to grow you bussiness as a photographer:site or social media
         </p>
         <button class="button">
           <a href="">Register</a>
@@ -52,25 +84,58 @@
         <img src="./assets/Illustration.png" alt="Illustration-icon" />
       </div>
     </section>
+    <!-- section 1 ends -->
+
+    <!-- section 2 Starts -->
     <section class="section-2">
       <div class="clients">
         <h2 class="h2-item-1">Our Clients</h2>
-        <h2 class="h2-item-2">We have been Working With some Fortune 500+ clients</h2>
+        <h2 class="h2-item-2">
+          We have been Working With some Fortune 500+ clients
+        </h2>
       </div>
       <div class="logo-container">
-        <img src="./assets/Logo.png" alt="" />
-        <img src="./assets/Logo (1).png" alt="" />
-        <img src="./assets/Logo (6).png" alt="" />
-        <img src="./assets/Logo (2).png.png" alt="" />
-        <img src="./assets/Logo (3).png" alt="" />
-        <img src="./assets/Logo (4).png" alt="" />
-        <img src="./assets/Logo (5).png" alt="" />
-        <img src="./assets/Logo (6).png" alt="" />
+        <div>
+          <img src="./assets/Logo.png" alt="" />
+        </div>
+
+        <div>
+          <img src="./assets/Logo (1).png" alt="" />
+        </div>
+
+        <div>
+          <img src="./assets/Logo (6).png" alt="" />
+        </div>
+
+        <div>
+          <img src="./assets/Logo (2).png" alt="" />
+        </div>
+
+        <div>
+          <img src="./assets/Logo (3).png" alt="" />
+        </div>
+
+        <div>
+          <img src="./assets/Logo (4).png" alt="" />
+        </div>
+
+        <div>
+          <img src="./assets/Logo (5).png" alt="" />
+        </div>
+
+        <div>
+          <img src="./assets/Logo (6).png" alt="" />
+        </div>
       </div>
     </section>
+    <!-- section 2 ends -->
+
+    <!-- section 3 starts -->
     <section class="section-3">
       <div class="header-container">
-        <h2 class="h2-item-1">Manage your entire community <br />in a single system</h2>
+        <h2 class="h2-item-1">
+          Manage your entire community <br />in a single system
+        </h2>
         <h2 class="h2-item-2">Who is Nexcent suitable for?</h2>
       </div>
       <div class="flexbox">
@@ -88,7 +153,7 @@
         </div>
         <div class="header-container">
           <img src="./assets/national Icon (1).png" alt="" />
-          <h3  class="h3-item-1">
+          <h3 class="h3-item-1">
             National <br />
             Assosiation
           </h3>
@@ -101,7 +166,7 @@
         </div>
         <div class="header-container">
           <img src="./assets/club Icon (1).png" alt="" />
-          <h3  class="h3-item-1">
+          <h3 class="h3-item-1">
             Clubs And <br />
             Groups
           </h3>
@@ -113,9 +178,12 @@
         </div>
       </div>
     </section>
+    <!-- section 3 ends -->
+
+    <!-- section 4 starts -->
     <section class="section-4">
       <img src="./assets/Frame 35.png" alt="" />
-      <div>
+      <div class="section-4-item">
         <h2 class="h2-item-1">
           The unseen of spending three <br />
           years at pixelgrade
@@ -133,11 +201,16 @@
         </button>
       </div>
     </section>
+    <!-- section 4 ends -->
+
+    <!-- section 5 start -->
     <section class="section-5">
-      <div>
+      <div class="section-5-item">
         <h2 class="h2-item-1">Helping a local</h2>
         <h2 class="color">bussiness reinvent itself</h2>
-        <h2 class="h2-item-2">We reached here with our hard work and dedication</h2>
+        <h2 class="h2-item-2">
+          We reached here with our hard work and dedication
+        </h2>
       </div>
       <div class="payment-items">
         <div class="members-club">
@@ -148,6 +221,7 @@
               <p>Members</p>
             </div>
           </div>
+
           <div class="flex">
             <img src="./assets/Icon (2).png" alt="" />
             <div>
@@ -175,13 +249,13 @@
         </div>
       </div>
     </section>
+    <!-- section 5 ends -->
+
+    <!-- section 6 starts -->
     <section class="section-6">
       <img src="./assets/mobile-login/pana.png" alt="" />
-      <div>
-        <h2 class="h2-item-1">
-          How to design your site footer like <br />
-          We did
-        </h2>
+      <div class="section-6-item">
+        <h2 class="h2-item-1">How to design your site footer like We did</h2>
         <p class="lorem">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
           tempore molestias odit distinctio qui aut, soluta ab nostrum sunt
@@ -198,9 +272,12 @@
         </button>
       </div>
     </section>
+    <!-- section 6 ends -->
+
+    <!-- section 7 starts -->
     <section class="section-7">
       <img src="./assets/image 9.png" alt="" />
-      <div>
+      <di class="section-7-item">
         <p class="lorem">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
           tempore molestias odit distinctio qui aut, soluta ab nostrum sunt
@@ -214,121 +291,201 @@
           exercitationem laboriosam vitae possimus.
         </p>
         <h4 class="tim-smith">Tim Smith</h4>
-        <h2  class="h2-item-2">British Dragon Boat Racing Assosiation</h2>
-        <div class="logo-container-2">
-          <img src="./assets/Logo (7).png" alt="" />
-          <img src="./assets/Logo (1).png" alt="" />
-          <img src="./assets/Logo (6).png" alt="" />
-          <img src="./assets/Logo (2).png.png" alt="" />
-          <img src="./assets/Logo (3).png" alt="" />
-          <img src="./assets/Logo (4).png" alt="" />
-          <img src="./assets/Logo (5).png" alt="" />
-          <img src="./assets/Logo (6).png" alt="" />
+        <h2 class="h2-item-2">British Dragon Boat Racing Assosiation</h2>
+      </div>
+        <div class="logo-container">
+          <div>
+            <img src="./assets/Logo (7).png" alt="" />
+          </div>
+
+          <div>
+            <img src="./assets/Logo (1).png" alt="" />
+          </div>
+
+          <div>
+            <img src="./assets/Logo (6).png" alt="" />
+          </div>
+
+          <div>
+            <img src="./assets/Logo (2).png" alt="" />
+          </div>
+
+          <div>
+            <img src="./assets/Logo (3).png" alt="" />
+          </div>
+
+          <div>
+            <img src="./assets/Logo (4).png" alt="" />
+          </div>
+
+          <div>
+            <img src="./assets/Logo (5).png" alt="" />
+          </div>
+
+          <div>
+            <img src="./assets/Logo (6).png" alt="" />
+          </div>
+
           <div class="meet">
             <h4>Meet all customers</h4>
+            <div>
+              <img src="./assets/24/Arrows & Directions/Right.png" alt="" />
+            </div>
+          
+        </div>
+        </div>
+        <div class="meet-mobile">
+          <h4>Meet all customers</h4>
+          <div>
             <img src="./assets/24/Arrows & Directions/Right.png" alt="" />
           </div>
         </div>
-      </div>
     </section>
+    
+    <!-- section 7 ends  -->
+
+    <!-- section 8 starts  -->
     <section class="section-8">
       <div class="caring">
-        <h2  class="h2-item-1">Caring is the new market</h2>
-        <h2  class="h2-item-2">
-          The Nexcent blog is the best place to read about the latest
-          membership insight, <br>trends and more.See who's joining the community,read about
-          how our community <br> are increasing their membership income and lot's and
-          more
+        <h2 class="h2-item-1">Caring is the new market</h2>
+        <h2 class="h2-item-2">
+          <p>
+            The Nexcent blog is the best place to read about the latest
+            membership insight, trends and more. See
+          </p>
+          <p>
+            who's joining the community,read about how our community are
+            increasing their membership
+          </p>
+          <p>income and lot's and more</p>
         </h2>
       </div>
 
       <div class="flex-container">
         <div>
-          <img src="./assets/image 18.png" alt="">
+          <img src="./assets/image 18.png" alt="" />
           <div class="creating">
             <h4 class="grey">
-              Creating Streamlined <br>Safeguarding Processes With <br>Oneren
+              Creating Streamlined <br />Safeguarding Processes With
+              <br />Oneren
             </h4>
             <div class="readmore-container">
               <h4>Readmore</h4>
-              <img src="./assets/24/Arrows & Directions/Right.png" alt="">
-            </div>
-          </div> 
-        </div>
-
-        <div>
-          <img src="./assets/image 19.png" alt="">
-          <div class="creating">
-            <h4 class="grey">What are your safeguarding <br> responsibilities and how can <br> you manage them?</h4>
-            <div class="readmore-container">
-              <h4>Readmore</h4>
-              <img src="./assets/24/Arrows & Directions/Right.png" alt="">
+              <img src="./assets/24/Arrows & Directions/Right.png" alt="" />
             </div>
           </div>
         </div>
 
         <div>
-          <img src="./assets/image 20.png" alt="">
+          <img src="./assets/image 19.png" alt="" />
           <div class="creating">
-            <h4 class="grey">Revamping the Membership <br> Model with Triathlon <br> Australia</h4>
+            <h4 class="grey">
+              What are your safeguarding <br />
+              responsibilities and how can <br />
+              you manage them?
+            </h4>
             <div class="readmore-container">
               <h4>Readmore</h4>
-              <img src="./assets/24/Arrows & Directions/Right.png" alt="">
+              <img src="./assets/24/Arrows & Directions/Right.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="./assets/image 20.png" alt="" />
+          <div class="creating">
+            <h4 class="grey">
+              Revamping the Membership <br />
+              Model with Triathlon <br />
+              Australia
+            </h4>
+            <div class="readmore-container">
+              <h4>Readmore</h4>
+              <img src="./assets/24/Arrows & Directions/Right.png" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- section 8 ends -->
+
+    <!-- section 9 starts -->
     <section class="section-9">
-     <h1 class="lorem-h1">
-      Pellentesque suscipit <br> fringilla libero eu.
-     </h1>
-     <button class="button">
-      <a href="">Get a Demo</a>
-    </button>
+      <h1 class="lorem-h1">Pellentesque suscipit fringilla libero eu.</h1>
+      <button class="button">
+        <a href="">Get a Demo</a>
+      </button>
     </section>
+    <!-- section 9 ends  -->
+
+    <!-- footer starts  -->
     <footer>
       <div class="footer-section-1">
         <div class="flex-1">
-          <div class="logo">
+          <div class="footer-logo">
             <img src="./assets/Footer/Big/Icon.png" alt="" class="logo-icon" />
             <h1 class="white">Nexcent</h1>
           </div>
           <h3 class="copyright">
-            Copyright  &#169; 2024 Nexcent ltd. <br>All rights reserved
-          </h3> 
+            Copyright &#169; 2024 Nexcent ltd. <br />All rights reserved
+          </h3>
           <div class="social-container">
-            <img src="./assets/Responsive Landing Page Design _ Website Home Page Design _ Agency Website UI Design (Community)/Footer/Big/Social Icons.png" alt="">
-            <img src="./assets/Footer/Big/Social Icons.png" alt="">
-            <img src="./assets/Footer 2/Big/Social Icons.png" alt="">
-            <img src="./assets/Responsive Landing Page Design _ Website Home Page Design _ Agency Website UI Design (Community) (2)/Footer/Big/Social Icons.png" alt="">
+            <img
+              src="./assets/Responsive Landing Page Design _ Website Home Page Design _ Agency Website UI Design (Community)/Footer/Big/Social Icons.png"
+              alt=""
+            />
+            <img src="./assets/Footer/Big/Social Icons.png" alt="" />
+            <img src="./assets/Footer 2/Big/Social Icons.png" alt="" />
+            <img
+              src="./assets/Responsive Landing Page Design _ Website Home Page Design _ Agency Website UI Design (Community) (2)/Footer/Big/Social Icons.png"
+              alt=""
+            />
           </div>
         </div>
 
         <div class="footer-section-2">
-          <div class="flex-2">
-            <h4 class="footer-h4">
-              Company
-            </h4>
-            <h3 class="footer-h3">
-              About us <br>Blog <br>Contact us <br>Pricing <br> Testimonials
-            </h3>
-          </div>
-          <div>
-            <h4  class="footer-h4">
-              Support
-            </h4>
-            <h3  class="footer-h3">
-              Help center <br>Terms of service <br>Legal <br>Privacy policy <br>status
-            </h3>
-          </div>
-          <div>
-            <h4  class="footer-h4">
-              Stay up to date
-            </h4>
+           <div class="Company-support">
+            <div class="flex-2">
+              <h4 class="footer-h4">Company</h4>
+              <h3 class="footer-h3">
+                About us <br />Blog <br />Contact us <br />Pricing <br />
+                Testimonials
+              </h3>
+            </div>
+            <div>
+              <h4 class="footer-h4">Support</h4>
+              <h3 class="footer-h3">
+                Help center <br />Terms of service <br />Legal <br />Privacy
+                policy <br />status
+              </h3>
+            </div>
+           </div>
+
+          <div class="date">
+            <h4 class="footer-h4">Stay up to date</h4>
+            <div class="input-box">
+            <input type="text" name="" placeholder="Your email address" id="">
+
+             <div class="svg">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_421_867)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0303 0.969691C17.2341 1.17342 17.3031 1.47584 17.2079 1.74778L11.9579 16.7478C11.8563 17.038 11.5878 17.2369 11.2806 17.2494C10.9733 17.2619 10.6895 17.0856 10.5646 16.8046L7.6818 10.3182L1.1954 7.43538C0.91439 7.31049 0.738092 7.02671 0.750627 6.71945C0.763163 6.41219 0.961991 6.14371 1.25224 6.04213L16.2522 0.792127C16.5242 0.696948 16.8266 0.765962 17.0303 0.969691ZM9.14456 9.91612L11.1671 14.4667L14.7064 4.35429L9.14456 9.91612ZM13.6457 3.29362L3.53331 6.83297L8.0839 8.85546L13.6457 3.29362Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_421_867">
+                <rect width="18" height="18" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+             </div>
+            
+            </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
